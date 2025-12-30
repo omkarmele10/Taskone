@@ -154,7 +154,7 @@ const About = () => {
             {achievements.map((a, i) => (
               <div key={i} className="flex gap-3 leading-tight tracking-tight">
                 <CheckCircle2 className="w-6 h-6 text-green-300 mt-1" />
-                <p className=" text-blue-50">{a}</p>
+                <p className="text-blue-50">{a}</p>
               </div>
             ))}
           </div>
@@ -163,21 +163,18 @@ const About = () => {
             <span className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
               Excellence in Education
             </span>
-            <h2 className="text-4xl font-bold text-gray-900">
-              Our Mission
-            </h2>
-            <p className=" text-gray-600 leading-tight tracking-tight text-justify">
-              We believe that great teachers inspire great students. Our mission includes building
-              a team of dedicated, experienced, and passionate educators who are committed to
-              the success of their students. Our faculty members not only teach subjects but also
-              mentor students, guide them academically and personally, and motivate them to
-              aim higher.
+            <h2 className="text-4xl font-bold text-gray-900">Our Mission</h2>
+            <p className="text-gray-600 leading-tight tracking-tight text-justify">
+              We believe that great teachers inspire great students. Our mission includes building a team
+              of dedicated, experienced, and passionate educators who are committed to the success of
+              their students. Our faculty members not only teach subjects but also mentor students, guide
+              them academically and personally, and motivate them to aim higher.
             </p>
-            <p className="text-justify text-gray-600 leading-tight tracking-tight">
-              Continuous training and professional development of teachers is an important part
-              of our mission. We ensure that our faculty stays updated with the latest curriculum
-              changes, teaching methods, and examination patterns so that students receive
-              relevant and effective instruction.
+            <p className="text-gray-600 leading-tight tracking-tight text-justify">
+              Continuous training and professional development of teachers is an important part of our
+              mission. We ensure that our faculty stays updated with the latest curriculum changes,
+              teaching methods, and examination patterns so that students receive relevant and effective
+              instruction.
             </p>
           </div>
         </div>
@@ -185,17 +182,18 @@ const About = () => {
 
       {/* VISION */}
       <section className="py-15 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-blue-600 to-green-600">
-        <div className="max-w-5xl mx-auto text-center text-white ">
-          <h2 className="text-3xl mb-2 md:text-4xl font-bold">Our Vision</h2>
-          <p className=" text-blue-100 tracking-tight text-justify">
-            Our vision is to become a trusted and leading coaching institute that empowers
-            students with knowledge, confidence, and strong values, enabling them to achieve
-            academic excellence and personal growth. We aim to create a learning environment
-            where education goes beyond textbooks and examinations, helping students develop
-            clarity of thought, discipline, and a lifelong passion for learning.
+        <div className="max-w-5xl mx-auto text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">Our Vision</h2>
+          <p className="text-blue-100 tracking-tight text-justify">
+            Our vision is to become a trusted and leading coaching institute that empowers students with
+            knowledge, confidence, and strong values, enabling them to achieve academic excellence and
+            personal growth. We aim to create a learning environment where education goes beyond textbooks
+            and examinations, helping students develop clarity of thought, discipline, and a lifelong
+            passion for learning.
           </p>
         </div>
       </section>
+
     </div>
   );
 };
