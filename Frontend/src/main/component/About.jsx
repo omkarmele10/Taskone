@@ -47,25 +47,8 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen" id="about">
-      {/* HERO */}
-      {/* <section className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-blue-50 via-white to-green-50">
-        <div className="max-w-7xl mx-auto text-center space-y-6">
-          <h1 className="text-4xl md:text-4xl font-bold text-gray-900">
-            About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
-              A.M Coaching
-            </span>
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Building futures through quality education and personalized learning
-            experiences
-          </p>
-        </div>
-      </section> */}
-
-      {/* MISSION */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+    <div className="h-auto" id="about">
+      <section className="py-10 px-3 md:px-8 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
@@ -76,14 +59,14 @@ const About = () => {
               Empowering Students Through Quality Education
             </h2>
 
-            <p className=" text-gray-600 leading-relaxed">
+            <p className=" text-gray-600  leading-tight">
               At A.M Coaching Classes, we are dedicated to providing comprehensive
               education across all academic subjects. Our mission is to create a
               nurturing environment where students can develop their full
               potential and achieve academic excellence.
             </p>
 
-            <p className=" text-gray-600 leading-relaxed">
+            <p className=" text-gray-600  leading-tight">
               We believe in personalized attention, innovative teaching methods,
               and fostering a love for learning that extends beyond the
               classroom.
@@ -113,18 +96,17 @@ const About = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 bg-white rounded-xl p-4 shadow-md"
+                className="flex items-center  bg-white rounded-xl p-1 shadow-md"
               >
                 <div
-                  className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center text-white`}
-                >
+                  className={`w-12 h-12 bg-gradient-to-br ${item.color} mx-2 rounded-lg flex items-center justify-center text-white`}>
                   {item.icon}
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600">{item.desc}</p>
+                  <p className="text-sm tracking-tight text-gray-600">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -134,11 +116,11 @@ const About = () => {
 
 
       {/* VALUES */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-10  px-4 md:px-8 lg:px-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
+          <div className="text-center mb-10 ">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Our Core <span className="text-green-600">Values</span>
+              Our Core <span className="leading-tight text-green-600">Values</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               The principles that guide our approach to education
@@ -149,7 +131,7 @@ const About = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl leading-tight tracking-tight transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-green-500 rounded-xl flex items-center justify-center text-white mb-4">
                   {value.icon}
@@ -165,14 +147,14 @@ const About = () => {
       </section>
 
       {/* ACHIEVEMENTS */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-white">
+      <section className="py-15 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-gradient-to-br from-blue-600 to-green-600 rounded-2xl p-12 text-white space-y-6">
             <h3 className="text-3xl font-bold">Our Achievements</h3>
             {achievements.map((a, i) => (
-              <div key={i} className="flex gap-3">
+              <div key={i} className="flex gap-3 leading-tight tracking-tight">
                 <CheckCircle2 className="w-6 h-6 text-green-300 mt-1" />
-                <p className="text-lg text-blue-50">{a}</p>
+                <p className=" text-blue-50">{a}</p>
               </div>
             ))}
           </div>
@@ -184,14 +166,14 @@ const About = () => {
             <h2 className="text-4xl font-bold text-gray-900">
               Our Mission
             </h2>
-            <p className=" text-gray-600 leading-relaxed text-justify">
+            <p className=" text-gray-600 leading-tight tracking-tight text-justify">
               We believe that great teachers inspire great students. Our mission includes building
               a team of dedicated, experienced, and passionate educators who are committed to
               the success of their students. Our faculty members not only teach subjects but also
               mentor students, guide them academically and personally, and motivate them to
               aim higher.
             </p>
-            <p className="text-justify text-gray-600 leading-relaxed">
+            <p className="text-justify text-gray-600 leading-tight tracking-tight">
               Continuous training and professional development of teachers is an important part
               of our mission. We ensure that our faculty stays updated with the latest curriculum
               changes, teaching methods, and examination patterns so that students receive
@@ -202,10 +184,10 @@ const About = () => {
       </section>
 
       {/* VISION */}
-      <section className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-blue-600 to-green-600">
-        <div className="max-w-5xl mx-auto text-center text-white space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
-          <p className=" text-blue-100 leading-relaxed text-justify">
+      <section className="py-15 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-blue-600 to-green-600">
+        <div className="max-w-5xl mx-auto text-center text-white ">
+          <h2 className="text-3xl mb-2 md:text-4xl font-bold">Our Vision</h2>
+          <p className=" text-blue-100 tracking-tight text-justify">
             Our vision is to become a trusted and leading coaching institute that empowers
             students with knowledge, confidence, and strong values, enabling them to achieve
             academic excellence and personal growth. We aim to create a learning environment

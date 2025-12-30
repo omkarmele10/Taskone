@@ -198,21 +198,12 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center text-white overflow-hidden md:h-160"
+      className=" flex items-center justify-center text-white overflow-hidden md:mb-10 "
     >
-      {/* Background Image */}
-      {/* <div
-        className="absolute inset-0 bg-cover bg-center scale-105 animate-slowZoom"
-        style={{ backgroundImage: `url(${banner1})` }}
-      /> */}
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0   "></div>
-
       {/* Content wrapper */}
-      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-5 md:pt-6 grid md:grid-cols-2 gap-12">
+      <div className=" z-10 max-w-7xl  px-5 md:px-5 md:pt-3 grid md:grid-cols-2 md:mt-10 ">
         {/* Left Content */}
-        <div className="order-2 md:order-1 animate-fadeInUp  text-left mt-20 ">
+        <div className="order-2 md:order-1 animate-fadeInUp  text-left md:mt-10">
           <h1 className="   text-3xl md:text-4xl lg:text-5xl font-bold  text-black pt-4 md:pt-0">
             Shaping Young Minds
             <span className="text-blue-400 pt-2 block"> Building Bright Futures</span>
@@ -297,7 +288,7 @@ export default function HeroSection() {
           </div>
 
           {/* Mobile Image (connects to bottom like desktop) */}
-          <div className="md:hidden flex justify-center  relative">
+          <div className="md:hidden flex justify-center  relative sm:mb-10 ">
             <div className="relative w-full flex justify-center">
               {/* Shadow / border pulse effect */}
               <div className="absolute animate-pulse"></div>
@@ -306,14 +297,14 @@ export default function HeroSection() {
               <img
                 src={image}
                 alt="img"
-                className="relative w-79  h-auto object-contain rounded-2xl p-1 -mb-1  "
+                className="relative w-79  h-auto object-contain rounded-2xl p-1 mb-4 "
               />
             </div>
           </div>
         </div>
 
         {/* Right Image (only visible on md and above) */}
-        <div className="order-1 md:order-2 hidden md:flex justify-center items-center relative pb-6 lg:ml-33">
+        <div className="order-1 md:order-2  hidden md:flex justify-center items-center relative pb-6 lg:ml-33">
           <div className="relative group perspective">
             {/* 3D shadow glow layer */}
             <div className="absolute inset-0 rounded-2xl   opacity-40 blur-xl group-hover:opacity-60 transition duration-500"></div>
@@ -325,7 +316,7 @@ export default function HeroSection() {
             <img
               src={image}
               alt="image"
-              className="md:rounded-xl md:border xl:border-0 w-40 sm:w-56 md:w-80 lg:w-[30rem] h-[75vh] "
+              className="md:rounded-xl md:border xl:border-0 w-40 sm:w-56 md:w-80 lg:h-[25rem] h-[75vh] "
             // className="relative w-40 sm:w-56 md:w-80 lg:w-[30rem] h-auto object-contain rounded-2xl drop-shadow-2xl
             //   transform transition-all duration-700 group-hover:rotate-y-6 group-hover:-rotate-x-3 group-hover:scale-105  "
             />

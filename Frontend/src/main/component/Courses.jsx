@@ -53,20 +53,20 @@ const Courses = () => {
     <div id="courses">
 
       {/* ================= HEADER ================= */}
-      <section className="py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-green-50">
-        <div className="max-w-5xl mx-auto text-center space-y-6">
+      <section className="py-15 px-4 bg-gradient-to-br from-blue-50 via-white to-green-50">
+        <div className="max-w-5xl mx-auto text-center space-y-2">
           <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">
             Our Courses
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
             Courses We{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
               Offer
             </span>
           </h1>
 
-          <p className="text-lg text-gray-600">
+          <p className=" text-gray-600 leading-tight">
             Complete academic support for school and commerce students with
             personalized guidance.
           </p>
@@ -74,7 +74,7 @@ const Courses = () => {
       </section>
 
       {/* ================= COURSES ================= */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-15 px-4 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {courses.map((course, index) => (
             <div
@@ -115,11 +115,11 @@ const Courses = () => {
       </section>
 
       {/* ================= SPECIAL SUBJECTS ================= */}
-      <section className="py-20 px-4 bg-gradient-to-br from-green-50 via-white to-blue-50">
+      <section className="py-10 px-4 bg-gradient-to-br from-green-50 via-white to-blue-50">
         <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-12 space-y-4">
-            <span className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm">
+            <span className="inline-block px-2 py-1 bg-green-100 text-green-700 rounded-full text-sm">
               Special Subjects
             </span>
 
@@ -127,7 +127,7 @@ const Courses = () => {
               Skill Development Programs
             </h2>
 
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-gray-600 max-w-3xl mx-auto">
               Unique programs designed to boost thinking skills, speed,
               accuracy, and creativity in students.
             </p>
@@ -170,7 +170,7 @@ const Courses = () => {
 
       {/* ================= CTA ================= */}
       <section className="py-10 px-4 bg-gradient-to-r from-[#0f4c8c] to-green-600">
-        <div className="max-w-4xl mx-auto text-center text-white space-y-4">
+        <div className="max-w-4xl mx-auto text-center text-white space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold">
             Start Your Learning Journey Today
           </h2>

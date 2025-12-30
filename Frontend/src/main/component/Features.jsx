@@ -28,11 +28,11 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-gray-50 to-blue-50" id="features">
+    <section className="py-15 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-gray-50 to-blue-50" id="features">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <div className="text-center mb-16 space-y-1">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
             Course <span className="text-green-600">Features</span>
           </h2>
           <p className=" text-gray-600 max-w-2xl mx-auto">
